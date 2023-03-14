@@ -2,6 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import {
+  OrbitControls,
+  PresentationControls,
+  Stage,
+  Html,
+  useProgress,
+} from "@react-three/drei";
+
+import { Canvas } from "@react-three/fiber";
+
+import { Model } from "../components/Rhetorician";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +25,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.main} style={{backgroundColor:"#001122"}}>
+        <Canvas dpr={[1, 2]} shadows style={{ height: "800px" }}>
+          <PresentationControls
+            enabled
+            global
+            speed={2}
+            polar={[0, 0]}
+            config={{ mass: 2, tension: 170, friction: 86 }}
+          >
+            <Stage><Model /></Stage>
+          </PresentationControls>
+        </Canvas>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -26,7 +48,6 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"

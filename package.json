@@ -9,15 +9,39 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@mantine/core": "^5.10.2",
+    "@mantine/hooks": "^5.10.2",
+    "@mantine/next": "^5.10.2",
     "@next/font": "13.1.6",
+    "@react-spring/parallax": "^9.6.1",
+    "@react-spring/web": "^9.6.1",
+    "@react-three/drei": "^9.56.8",
+    "@react-three/fiber": "^8.10.1",
+    "@tabler/icons": "^2.1.2",
+    "@tabler/icons-react": "^2.1.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "aos": "^2.3.4",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.1",
+    "gsap": "3.9.1",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-intersection-observer": "^9.4.1",
+    "styled-components": "^5.3.6",
+    "three": "^0.149.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/gsap": "^3.0.0",
+    "@types/styled-components": "^5.1.26"
   }
 }

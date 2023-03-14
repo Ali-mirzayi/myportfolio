@@ -1,0 +1,48 @@
+.one{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+  }
+  .two{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+  }
+  .three{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+  }
+  .four{
+    background-color: chocolate;
+    height: 100vh;
+    width: 100vw;
+  }
+  .five{
+    background-color: cyan;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .scrollSectionOuter {
+    overflow: hidden;
+  }
+  
+  .scrollSectionInner {
+    height: 100vh;
+    width: 600vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .scrollSection {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
