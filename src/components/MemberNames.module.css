@@ -1,0 +1,10 @@
+.names {
+    position: relative;
+    background-color: #333;
+    width: fit-content;
+    white-space: nowrap;
+    padding: 6px 15px 12px;
+    border-radius: 10px;
+    z-index: 5;
+    opacity: 1;
+  }

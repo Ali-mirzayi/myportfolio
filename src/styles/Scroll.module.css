@@ -1,0 +1,131 @@
+.container {
+  background-image: url(../../public/cropped2.webp) !important;
+  /* height: 220vh; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container2 {
+  background-image: url(../../public/cropped.webp) !important;
+  /* height: 250vh; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dot {
+  background-color: orange;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  padding: 6rem;
+  height: 40vh;
+  background-color: transparent;
+  position: fixed;
+  right: -80px;
+  bottom: 700px;
+  z-index: 20;
+}
+
+.h1 {
+  z-index: 40;
+  color: #fff;
+  font-weight: normal;
+  animation: neonize 4s linear 1;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 16px #ff108b,
+    0 0 32px #ff108b,
+    0 0 60px #ff108b,
+    0 0 90px #ff108b,
+    0 0 110px #ff108b;
+}
+
+.h2 {
+  width: 100vw;
+}
+
+@keyframes neonize {
+
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #953d64;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow:
+      0 0 4px #fff,
+      0 0 8px #fff,
+      0 0 16px #ff108b,
+      0 0 32px #ff108b,
+      0 0 60px #ff108b,
+      0 0 90px #ff108b;
+  }
+}
+
+.names {
+  position: relative;
+  background-color: #333;
+  width: fit-content;
+  white-space: nowrap;
+  padding: 6px 15px 12px;
+  border-radius: 10px;
+  z-index: 5;
+  opacity: 1;
+}
+
+@media (min-width: 700px) {
+  .container {
+    background-image: url(../../public/Wallpaper-La-La-Land-HD-Movies-5899.webp) !important;
+  }
+
+  .container2 {
+    background-image: url(../../public/348481-4k-wallpaper.webp) !important;
+  }
+  .h2 {
+    width: 60vw;
+    font-size: 2.5rem;
+  }
+}

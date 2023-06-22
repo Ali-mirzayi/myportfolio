@@ -1,0 +1,21 @@
+.main {
+    padding: 6rem;
+    position: fixed;
+    right: -12rem;
+    top: -5rem;
+    z-index: 20;
+}
+
+.canvas {
+    height: 200px !important;
+}
+
+@media (min-width: 700px) {
+    .main {
+        right: -10rem;
+        top: -4rem;
+    }
+    .canvas{
+        height: 250px !important;
+    }
+}

@@ -1,0 +1,9 @@
+.largeCircle{
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.1s;
+  background: wheat;
+  z-index: 99999999;
+  /* filter: invert(100%); */
+}
