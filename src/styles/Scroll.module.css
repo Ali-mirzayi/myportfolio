@@ -59,9 +59,9 @@
 .h2 {
   width: 100vw;
   color: transparent;
-  -webkit-text-stroke: 2px #ff59af;
+  -webkit-text-stroke: 2px #ffc2e1;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 @keyframes neonize {
@@ -121,6 +121,5 @@
   .h2 {
     width: 60vw;
     font-size: 2.3rem;
-    -webkit-text-stroke: 2px #fff;
   }
 }
