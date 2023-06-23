@@ -55,10 +55,10 @@ export default function Scroll() {
 
     return (
         <Box sx={{ backgroundColor: "#00092e", position: "relative" }}>
-            <div style={{position:"fixed",top:0}}>
-            <motion.div style={{opacity: scrollYProgress, width:"100vw",height:"100vh",zIndex:-900,position:"relative"}}>
-                <Image priority src="/Wallpaper-La-La-Land-HD-Movies-5899.webp" alt="" fill/>
-            </motion.div>
+            <div style={{ position: "fixed", top: 0 }}>
+                <motion.div style={{ opacity: scrollYProgress, width: "100vw", height: "100vh", zIndex: -900, position: "relative" }}>
+                    <Image priority src={width > height ? "/Wallpaper-La-La-Land-HD-Movies-5899.webp" : "/cropped2.webp"} alt="" fill />
+                </motion.div>
             </div>
             <div ref={textRef} style={{ height: "fit-content" }}>
                 {permition ?

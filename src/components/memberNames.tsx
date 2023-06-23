@@ -39,10 +39,10 @@ function MemberNames({ width }: { width: number }) {
 
     return (
         <div ref={ref3} style={{ height: "400vh", position: "relative" }}>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "fixed", width: "100vw", zIndex:width>500?5:41, top: "200px" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "fixed", width: "100vw", zIndex: width > 500 ? 5 : 41, top: "200px", fontSize: "12.7px" }}>
                 <motion.div className={styles.names} style={{ marginBottom: "10px", x: transx3, y: transy3 }}><h1>some dummy text:</h1></motion.div>
                 <motion.div className={styles.names} style={{ marginBottom: "10px", x: transx4, y: transy3 }}><h1>sit amet consectetur adipi</h1></motion.div>
-                <motion.div className={styles.names} style={{ marginBottom: "10px", x: transx3,y:transy4, rotate: roate }}><h1> elit. Illum officiis cumque</h1></motion.div>
+                <motion.div className={styles.names} style={{ marginBottom: "10px", x: transx3, y: transy4, rotate: roate }}><h1> elit. Illum officiis cumque</h1></motion.div>
                 <motion.div className={styles.names} style={{ x: transx4, y: transy4 }}><h1>aliquam illo minus maxim</h1></motion.div>
             </div>
         </div>);
