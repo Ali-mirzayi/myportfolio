@@ -57,19 +57,21 @@ export default function Scroll() {
         <Box sx={{ backgroundColor: "#00092e", position: "relative" }}>
             <div style={{ position: "fixed", top: 0 }}>
                 <motion.div style={{ opacity: scrollYProgress, width: "100vw", height: "100vh", zIndex: -900, position: "relative" }}>
-                    <Image priority src={width > height ? "/Wallpaper-La-La-Land-HD-Movies-5899.webp" : "/cropped2.webp"} alt="" fill />
+                    <Image priority={true} src={width > height ? "/Wallpaper-La-La-Land-HD-Movies-5899.webp" : "/cropped2.webp"} alt="" fill />
                 </motion.div>
             </div>
             <div ref={textRef} style={{ height: "fit-content" }}>
                 {permition ?
-                    <div className={inter.className}>
-                        <div>
-                            <motion.h1 className={styles.h1} style={{ y: h1, fontSize: "6rem" }}>La La Land</motion.h1>
+                    <div>
+                        <div className={inter.className}>
+                            <motion.h1 className={styles.h1} style={{ y: h1 }}>La La Land</motion.h1>
                         </div>
                         <div style={{ position: "absolute", top: "370px", width: "100vw", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                            <motion.div className={styles.h2} style={{ y: h2, color: "#ffc7e4", textAlign: "center", fontSize: "3rem" }}>
-                                <p>City of stars Are you shining just for me?</p>
-                                <p>City of stars You never shined so brightly.</p>
+                            <motion.div className={styles.h2} style={{ y: h2, textAlign: "center" }}>
+                                <p>City of stars</p>
+                                <p>Are you shining just for me?</p>
+                                <p>City of stars</p>
+                                <p>There's so much that I can't see.</p>
                             </motion.div>
                         </div>
                     </div> : null}
