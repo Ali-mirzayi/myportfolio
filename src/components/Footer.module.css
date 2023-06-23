@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+}
+
+@media (min-width: 700px) {
+    .container {
+        flex-direction: row;
+    }
+}

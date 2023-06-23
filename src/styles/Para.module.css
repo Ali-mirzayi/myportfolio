@@ -1,0 +1,16 @@
+.animation {
+    /* display: block; */
+    /* position: relative; */
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.bgi {
+    background-image: url(../../public/pexels-alice-castro-9408601.jpg);
+    width: 100%;
+    height: 300%;
+    background-position: bottom center;
+	background-size: cover;
+	position: absolute;
+}
