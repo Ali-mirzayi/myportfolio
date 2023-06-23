@@ -62,12 +62,12 @@ export default function Scroll() {
             </div>
             <div ref={textRef} style={{ height: "fit-content" }}>
                 {permition ?
-                    <div className={inter.className}>
-                        <div>
+                    <div>
+                        <div className={inter.className}>
                             <motion.h1 className={styles.h1} style={{ y: h1, fontSize: "6rem" }}>La La Land</motion.h1>
                         </div>
                         <div style={{ position: "absolute", top: "370px", width: "100vw", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                            <motion.div className={styles.h2} style={{ y: h2, color: "#ffc7e4", textAlign: "center", fontSize: "3rem" }}>
+                            <motion.div className={styles.h2} style={{ y: h2, textAlign: "center", fontSize: "30px" }}>
                                 <p>City of stars Are you shining just for me?</p>
                                 <p>City of stars You never shined so brightly.</p>
                             </motion.div>
