@@ -71,7 +71,7 @@ export default function Scroll() {
                                 <p>City of stars</p>
                                 <p>Are you shining just for me?</p>
                                 <p>City of stars</p>
-                                <p>There's so much that I can't see.</p>
+                                <p>There&apos;s so much that I can&apos;t see.</p>
                             </motion.div>
                         </div>
                     </div> : null}
