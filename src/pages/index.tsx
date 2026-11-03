@@ -2,8 +2,7 @@ import * as React from 'react'
 import styles from '../styles/Scroll.module.css';
 import { motion, useScroll, useTransform } from "framer-motion";
 import Shop from "@/components/Shop";
-import { Neonderthaw } from '@next/font/google';
-import { Caveat } from '@next/font/google';
+import localFont from 'next/font/local';
 import { useRecoilValue } from 'recoil';
 import { Permition } from '../Atoms';
 import { Box } from '@mantine/core';
@@ -15,8 +14,18 @@ const SphereText = dynamic(() => import('../components/SphereText'), {
     loading: () => null,
 })
 
-const inter = Neonderthaw({ weight: '400', subsets: ['latin'] });
-const caveat = Caveat({ weight: '400', subsets: ['latin'] });
+const inter = localFont({
+  src: '../../public/fonts/Neonderthaw-Regular.woff2',
+  weight: '400',
+  style: 'normal',
+  display: 'swap',
+});
+const caveat = localFont({
+  src: '../../public/fonts/Caveat-Regular.woff2',
+  weight: '400',
+  style: 'normal',
+  display: 'swap',
+});
 
 export default function Scroll() {
     const ref = React.useRef<HTMLDivElement>(null);
